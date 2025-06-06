@@ -11,7 +11,7 @@ document.getElementById("cadastroForm").addEventListener("submit", function(even
         return;
     }
 
-    // Salva credenciais
+    
     localStorage.setItem("username", newUsername);
     localStorage.setItem("password", newPassword);
 
@@ -19,6 +19,6 @@ document.getElementById("cadastroForm").addEventListener("submit", function(even
     cadastroMessage.style.color = "green";
 
     setTimeout(() => {
-        window.location.href = "01-login.html"; // Novo nome correto!
+        window.location.href = "01-login.html"; 
     }, 2000);
 });
