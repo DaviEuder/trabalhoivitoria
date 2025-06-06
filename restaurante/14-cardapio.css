@@ -49,7 +49,7 @@ body {
     margin-top: 5px;
 }
 
-/* Indicação de prato selecionado */
+
 .prato.selecionado img {
     border: 2px solid #b23b3b;
     box-shadow: 0 0 10px rgba(178, 59, 59, 0.6);
@@ -67,14 +67,14 @@ button {
     transition: transform 0.3s;
 }
 
-/* Botão de reserva desativado */
+
 #reserveBtn.disabled {
     background-color: #ccc;
     cursor: not-allowed;
     opacity: 0.6;
 }
 
-/* Botão de reserva ativado */
+
 #reserveBtn.enabled {
     background-color: #b23b3b;
     cursor: pointer;
