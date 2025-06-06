@@ -1,18 +1,21 @@
-let pratosSelecionados = 0;
+let pratosSelecionados = [];
 
 function selecionarPrato(element) {
+    const nomePrato = element.querySelector("img").alt;
+    const precoPrato = element.querySelector(".preco").textContent;
+
     if (element.classList.contains("selecionado")) {
         element.classList.remove("selecionado");
-        pratosSelecionados--;
+        pratosSelecionados = pratosSelecionados.filter(prato => prato.nome !== nomePrato);
     } else {
         element.classList.add("selecionado");
-        pratosSelecionados++;
+        pratosSelecionados.push({ nome: nomePrato, preco: precoPrato });
     }
 
     let reserveBtn = document.getElementById("reserveBtn");
-    if (pratosSelecionados > 0) {
-        reserveBtn.classList.remove("disabled");
+    if (pratosSelecionados.length > 0) {
         reserveBtn.classList.add("enabled");
+        reserveBtn.classList.remove("disabled");
         reserveBtn.removeAttribute("disabled");
     } else {
         reserveBtn.classList.remove("enabled");
@@ -23,7 +26,7 @@ function selecionarPrato(element) {
 
 
 document.getElementById("reserveBtn").addEventListener("click", function() {
-    if (pratosSelecionados > 0) {
+    if (pratosSelecionados.length > 0) {
         localStorage.setItem("pratosSelecionados", JSON.stringify(pratosSelecionados));
         window.location.href = "10-reservas.html";
     }
