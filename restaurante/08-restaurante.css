@@ -1,11 +1,11 @@
-/* Reset básico */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Estilos gerais */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #fff8f0;
@@ -13,7 +13,7 @@ body {
     line-height: 1.6;
 }
 
-/* Cabeçalho */
+
 header {
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
@@ -24,7 +24,7 @@ header {
     position: relative;
 }
 
-/* Navegação */
+
 nav ul {
     list-style: none;
     display: flex;
@@ -46,7 +46,7 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Destaque */
+
 .destaque {
     text-align: center;
     padding: 40px;
@@ -57,7 +57,7 @@ nav ul li a:hover {
     color: #b23b3b;
 }
 
-/* Botão de reserva */
+
 #reserveBtn {
     background-color: #b23b3b;
     color: white;
@@ -69,14 +69,14 @@ nav ul li a:hover {
     transition: background-color 0.3s;
 }
 
-/* Botão de reserva - desativado inicialmente */
+
 #reserveBtn.disabled {
     background-color: #ccc;
     cursor: not-allowed;
     opacity: 0.6;
 }
 
-/* Botão de reserva - ativado ao selecionar um prato */
+
 #reserveBtn.enabled {
     background-color: #b23b3b;
     cursor: pointer;
@@ -99,7 +99,7 @@ nav ul li a:hover {
     gap: 20px;
 }
 
-/* Botões de pratos */
+
 .prato {
     position: relative;
     cursor: pointer;
@@ -118,7 +118,7 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-/* Preço dos pratos */
+
 .preco {
     display: none;
     position: absolute;
@@ -132,18 +132,18 @@ nav ul li a:hover {
     font-size: 14px;
 }
 
-/* Mostrar preço ao passar o mouse */
+
 .prato:hover .preco {
     display: block;
 }
 
-/* Indicar prato selecionado */
+
 .prato.selecionado img {
     border: 2px solid #b23b3b;
     box-shadow: 0 0 10px rgba(178, 59, 59, 0.6);
 }
 
-/* Botão "Mais Pratos" */
+
 #verMaisPratos {
     margin-top: 20px;
     padding: 10px;
@@ -160,7 +160,7 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
-/* Rodapé invisível inicialmente */
+
 #copyright {
     display: none;
     position: fixed;
