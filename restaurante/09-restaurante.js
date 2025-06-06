@@ -24,7 +24,7 @@ function selecionarPrato(element) {
     }
 }
 
-
+// Redireciona para a tela de reservas e envia os pratos selecionados
 document.getElementById("reserveBtn").addEventListener("click", function() {
     if (pratosSelecionados.length > 0) {
         localStorage.setItem("pratosSelecionados", JSON.stringify(pratosSelecionados));
@@ -32,21 +32,19 @@ document.getElementById("reserveBtn").addEventListener("click", function() {
     }
 });
 
-
+// Redireciona para cardápio completo ao clicar no botão "Mais Pratos"
 document.getElementById("verMaisPratos").addEventListener("click", function() {
     window.location.href = "13-cardapio.html";
 });
 
-
-window.addEventListener("scroll", function() {
+// Exibe o rodapé após rolar um pouco a página
+window.addEventListener("scroll", function () {
     const copyright = document.getElementById("copyright");
-    if (window.scrollY > 150) {
-        copyright.style.display = "block";
-        copyright.style.opacity = "1";
+    if (!copyright) return;
+
+    if (window.scrollY > 30) {
+        copyright.classList.add("visivel");
     } else {
-        copyright.style.opacity = "0";
-        setTimeout(() => {
-            copyright.style.display = "none";
-        }, 500);
+        copyright.classList.remove("visivel");
     }
 });
