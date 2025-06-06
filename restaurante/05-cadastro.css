@@ -1,0 +1,82 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* Contêiner do Login e Cadastro */
+.login-container, .cadastro-container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 300px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Campos de entrada */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+
+}
+/* Quando input selecionado*/
+input:focus{
+    outline: none;
+    transform: scale(1.1);
+}
+
+/* Botões */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ef1a1a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #b70202;
+}
+
+/* Mensagens de erro e sucesso */
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+.success-message {
+    color: green;
+    font-size: 14px;
+}
+
+/* Botão de cadastro */
+#cadastroBtn {
+    background-color: #337ab7;
+    margin-top: 10px;
+}
+
+#cadastroBtn:hover {
+    background-color: #286090;
+}

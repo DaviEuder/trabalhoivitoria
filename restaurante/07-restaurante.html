@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Sabor & Arte</title>
+    <link rel="stylesheet" href="08-restaurante.css">
+    <script defer src="09-restaurante.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Restaurante Sabor & Arte</h1>
+        <nav>
+            <ul>
+                <li><a href="07-restaurante.html">Home</a></li>
+                <li><a href="13-cardapio.html">Cardápio Completo</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="destaque">
+            <h2>Bem-vindo ao melhor da culinária!</h2>
+            <p>Sabores inesquecíveis em um ambiente acolhedor.</p>
+            <button id="reserveBtn" class="disabled" disabled>Reserve sua mesa</button>
+        </section>
+
+        <section class="galeria">
+            <h3>Pratos em destaque</h3>
+            <div class="imagens">
+                <button class="prato" onclick="selecionarPrato(this)">
+                    <img src="img/prato1.jpg" alt="Prato 1">
+                    <div class="preco">R$ 49,90</div>
+                </button>
+                <button class="prato" onclick="selecionarPrato(this)">
+                    <img src="img/sushi.JPG" alt="Prato 2">
+                    <div class="preco">R$ 39,90</div>
+                </button>
+                <button class="prato" onclick="selecionarPrato(this)">
+                    <img src="img/prato3.jpg" alt="Prato 3">
+                    <div class="preco">R$ 44,90</div>
+                </button>
+            </div>
+            
+            <!-- Botão para acessar o cardápio completo -->
+            <button id="verMaisPratos">Mais Pratos</button>
+        </section>
+    </main>
+
+    <footer id="copyright">
+        <p>&copy; 2025 Restaurante Sabor & Arte - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazer Reserva</title>
+    <link rel="stylesheet" href="11-reservas.css">
+</head>
+<body>
+    <div class="reserva-container">
+        <h2>Finalize sua Reserva</h2>
+        <div id="pratosSelecionados"></div>
+        
+        <label for="pagamento">Forma de pagamento:</label>
+        <select id="pagamento">
+            <option value="cartao">Cartão de Crédito</option>
+            <option value="pix">Pix</option>
+            <option value="dinheiro">Dinheiro</option>
+        </select>
+
+        <textarea id="observacoes" placeholder="Observações (exemplo: sem cebola)"></textarea>
+        
+        <button id="confirmarReserva">Confirmar Reserva</button>
+        <p id="mensagemReserva"></p>
+    </div>
+
+    <script src="12-reservas.js"></script>
+</body>
+</html>
