@@ -87,7 +87,7 @@ nav ul li a:hover {
     background-color: #922d2d;
 }
 
-/* Galeria de pratos */
+
 .galeria {
     text-align: center;
     padding: 20px;
@@ -120,21 +120,9 @@ nav ul li a:hover {
 
 
 .preco {
-    display: none;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-
-.prato:hover .preco {
-    display: block;
+    font-weight: bold;
+    color: #b23b3b;
+    margin-top: 5px;
 }
 
 
@@ -162,7 +150,8 @@ nav ul li a:hover {
 
 
 #copyright {
-    display: none;
+    opacity: 0;
+    pointer-events: none;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -170,5 +159,11 @@ nav ul li a:hover {
     color: white;
     text-align: center;
     padding: 15px;
-    transition: opacity 0.5s;
+    transition: opacity 0.5s ease;
+    z-index: 1000;
+}
+
+#copyright.visivel {
+    opacity: 1;
+    pointer-events: auto;
 }
