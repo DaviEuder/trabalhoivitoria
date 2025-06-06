@@ -1,4 +1,4 @@
-/* Estilos gerais */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -11,7 +11,7 @@ body {
     box-sizing: border-box;
 }
 
-/* Contêiner do Login e Cadastro */
+
 .login-container, .cadastro-container {
     background: white;
     padding: 30px;
@@ -26,7 +26,7 @@ h2 {
     color: #333;
 }
 
-/* Campos de entrada */
+
 input {
     width: 100%;
     padding: 10px;
@@ -60,7 +60,7 @@ button:hover {
     background-color: #b70202;
 }
 
-/* Mensagens de erro e sucesso */
+
 .error-message {
     color: red;
     font-size: 14px;
@@ -71,7 +71,7 @@ button:hover {
     font-size: 14px;
 }
 
-/* Botão de cadastro */
+
 #cadastroBtn {
     background-color: #337ab7;
     margin-top: 10px;
